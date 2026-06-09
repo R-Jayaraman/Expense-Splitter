@@ -1,47 +1,50 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "Entery-.####",
- "creation": "2026-06-04 13:16:59.199919",
+ "creation": "2026-06-08 11:28:00.371963",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "room_rent",
-  "electricity",
-  "grocery",
-  "actual_amount"
+  "member",
+  "amount",
+  "date",
+  "reference_type",
+  "reference_name"
  ],
  "fields": [
   {
-   "fieldname": "actual_amount",
-   "fieldtype": "Currency",
-   "label": "Actual Amount",
-   "read_only": 1
+   "fieldname": "member",
+   "fieldtype": "Data",
+   "label": "Member"
   },
   {
-   "fieldname": "room_rent",
+   "fieldname": "amount",
    "fieldtype": "Currency",
-   "label": "Room Rent"
+   "label": "Amount"
   },
   {
-   "fieldname": "electricity",
-   "fieldtype": "Currency",
-   "label": "Electricity"
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "date"
   },
   {
-   "fieldname": "grocery",
-   "fieldtype": "Currency",
-   "label": "Grocery"
+   "fieldname": "reference_type",
+   "fieldtype": "Data",
+   "label": "Reference Type"
+  },
+  {
+   "fieldname": "reference_name",
+   "fieldtype": "Data",
+   "label": "Reference Name"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-04 13:35:29.658381",
+ "modified": "2026-06-08 11:30:30.687958",
  "modified_by": "Administrator",
  "module": "Roommate Expense Manager",
- "name": "Expense Configuration",
- "naming_rule": "Expression",
+ "name": "Payment Entry",
  "owner": "Administrator",
  "permissions": [
   {

@@ -247,3 +247,9 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+doc_events = {
+    "Grocery Expense": {
+        "on_submit": "roommate_expense_manager.api.grocery.update_budget",
+        "on_cancel": "roommate_expense_manager.api.grocery.update_budget"
+    }
+}

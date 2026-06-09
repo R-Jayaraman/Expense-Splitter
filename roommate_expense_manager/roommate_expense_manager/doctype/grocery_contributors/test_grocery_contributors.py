@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestExpenseCategory(FrappeTestCase):
+class TestGroceryContributors(FrappeTestCase):
 	pass

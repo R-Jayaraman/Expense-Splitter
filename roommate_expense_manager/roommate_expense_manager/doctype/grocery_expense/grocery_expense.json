@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "GE-.YYYY.-.####",
+ "creation": "2026-06-04 17:12:39.897118",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "grocery_budget",
+  "expense_date",
+  "available_balance",
+  "amount",
+  "purchased_by",
+  "reason",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "expense_date",
+   "fieldtype": "Date",
+   "label": "Expense Date"
+  },
+  {
+   "fieldname": "grocery_budget",
+   "fieldtype": "Link",
+   "label": "Grocery Budget",
+   "options": "Grocery Budget"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "purchased_by",
+   "fieldtype": "Link",
+   "label": "Purchased By",
+   "options": "Room Member"
+  },
+  {
+   "fetch_from": "grocery_budget.available",
+   "fieldname": "available_balance",
+   "fieldtype": "Currency",
+   "label": "Available Balance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Grocery Expense",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-06-05 00:43:26.092604",
+ "modified_by": "Administrator",
+ "module": "Roommate Expense Manager",
+ "name": "Grocery Expense",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

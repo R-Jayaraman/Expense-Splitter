@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "GB-.YYYY.-.####",
+ "creation": "2026-06-04 17:06:32.824024",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "month",
+  "budget_amount",
+  "collected_amount",
+  "pending_collection",
+  "total_expense",
+  "available",
+  "contributors"
+ ],
+ "fields": [
+  {
+   "fieldname": "budget_amount",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Budget Amount",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "collected_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Collected Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pending_collection",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Pending Collection",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_expense",
+   "fieldtype": "Currency",
+   "label": "Total Expense",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available",
+   "fieldtype": "Currency",
+   "label": "Available",
+   "read_only": 1
+  },
+  {
+   "fieldname": "contributors",
+   "fieldtype": "Table",
+   "label": "Contributors",
+   "options": "Grocery Contributors"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "label": "Month",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember",
+   "set_only_once": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-09 15:31:58.320604",
+ "modified_by": "Administrator",
+ "module": "Roommate Expense Manager",
+ "name": "Grocery Budget",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

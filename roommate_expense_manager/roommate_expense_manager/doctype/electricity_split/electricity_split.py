@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class RoomMember(Document):
+class ElectricitySplit(Document):
 	pass

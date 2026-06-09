@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestExpenseConfiguration(FrappeTestCase):
+class TestRoomRent(FrappeTestCase):
 	pass

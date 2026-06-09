@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "EB-.YYYY.-.#####",
+ "creation": "2026-06-05 09:41:55.075527",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "bill_month",
+  "total_unit",
+  "total_amount",
+  "collected_amount",
+  "pending_amount",
+  "bill_status",
+  "electricity_split",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "total_unit",
+   "fieldtype": "Float",
+   "label": "Total Unit"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "collected_amount",
+   "fieldtype": "Currency",
+   "label": "Collected Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pending_amount",
+   "fieldtype": "Currency",
+   "label": "Pending Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bill_status",
+   "fieldtype": "Select",
+   "label": "Bill Status",
+   "options": "Pending\nPartial\nCompleted"
+  },
+  {
+   "fieldname": "electricity_split",
+   "fieldtype": "Table",
+   "label": "Electricity Split",
+   "options": "Electricity Split"
+  },
+  {
+   "fieldname": "bill_month",
+   "fieldtype": "Select",
+   "label": "Bill Month",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Electricity Bill",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-05 13:16:59.159412",
+ "modified_by": "Administrator",
+ "module": "Roommate Expense Manager",
+ "name": "Electricity Bill",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
